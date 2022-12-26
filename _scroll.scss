@@ -1,0 +1,41 @@
+.scrollup{
+    position: fixed;
+    background-color: var(--first-color);
+    right: 1rem;
+    bottom: -20%;
+    display: inline-flex;
+    padding: 0.3rem;
+    border-radius: 0.25rem;
+    z-index: var(--z-tooltip);
+    opacity: 0.75;
+    transition: 400ms;
+
+    &:hover{
+        background-color: var(--first-color);
+        opacity: 1;
+    }
+
+    &__icon{
+        font-size: 1.5rem;
+        color: var(--title-color);
+    }
+}
+
+.show-scroll{
+    bottom: 3rem;   
+}
+
+::-webkit-scrollbar{
+    width: 0.6rem;
+    border-radius: 0.5rem;
+    background-color: var(--scroll-bar-color);
+
+    &-thumb{
+        background-color: var(--scroll-thumb-color);
+        border-radius: 0.5rem;
+
+        &:hover{
+            background-color: var(--text-color-light);
+        }
+    }
+}
